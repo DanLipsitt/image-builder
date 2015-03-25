@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
 	debootstrap \
 	qemu-user-static \
 	qemu \
-	git
+	git \
+	make
 
 COPY ./ /app
 WORKDIR /app
